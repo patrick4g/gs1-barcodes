@@ -1,0 +1,28 @@
+[project]
+name = "gs1-barcodes"
+version = "0.0.0"
+description = "A simple Jupyter notebook to demonstrate how to generate and scan GS1 barcodes"
+readme = "README.md"
+requires-python = "~=3.12"
+authors = []
+dependencies = [
+    "jupyter",
+    "pillow",
+    "treepoem",
+    "zxing-cpp",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ruff",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B", "Q"]
+extend-select = ["I"]
